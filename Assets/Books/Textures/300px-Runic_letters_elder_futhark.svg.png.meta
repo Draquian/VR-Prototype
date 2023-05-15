@@ -1,0 +1,663 @@
+fileFormatVersion: 2
+guid: f2053767eaece704bb3b121b496b9a98
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 133
+        width: 26
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51fb61c8a4f05d47a4288be4389a0d3
+      internalID: 1178617027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_1
+      rect:
+        serializedVersion: 2
+        x: 40
+        y: 134
+        width: 35
+        height: 59
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74603db7ca635c64fa3cd17bae7e6050
+      internalID: 1679755006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_2
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 133
+        width: 24
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3250eb776dfe454c9f683a4ddbb8910
+      internalID: 1673572746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_3
+      rect:
+        serializedVersion: 2
+        x: 127
+        y: 133
+        width: 18
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9b1cfb1c0b304147b5ae9380e00c1ed
+      internalID: 1766772192
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_4
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 133
+        width: 24
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09997c3bfa3dff34f9ecdb4ad7bd9cf8
+      internalID: -1908851071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_5
+      rect:
+        serializedVersion: 2
+        x: 197
+        y: 141
+        width: 25
+        height: 46
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dcb5cd91c3f01140aed032358ec9259
+      internalID: -510703354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_6
+      rect:
+        serializedVersion: 2
+        x: 235
+        y: 135
+        width: 31
+        height: 58
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5710508ddf85ce44afb3b50d8a2a11a
+      internalID: 2032704306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_7
+      rect:
+        serializedVersion: 2
+        x: 280
+        y: 133
+        width: 20
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8adfbed93db088344a28aa5a9131175e
+      internalID: -62396954
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 67
+        width: 40
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d477d12def739704e8e0e6361d7652d1
+      internalID: 735639344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_9
+      rect:
+        serializedVersion: 2
+        x: 49
+        y: 67
+        width: 24
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0c3da6492b3dc740a04992ee24dfd8c
+      internalID: -404286248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_10
+      rect:
+        serializedVersion: 2
+        x: 82
+        y: 67
+        width: 5
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccf1258d1cde45345b734e0b0b2974c4
+      internalID: -1550902036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_11
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 69
+        width: 39
+        height: 52
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3769df6fce6cb764fb6dd25bc034ccf2
+      internalID: -1092191412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_13
+      rect:
+        serializedVersion: 2
+        x: 142
+        y: 67
+        width: 34
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7881a91752c0bf949bf813f7a92f647c
+      internalID: -983655863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_14
+      rect:
+        serializedVersion: 2
+        x: 187
+        y: 67
+        width: 25
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9e396b645f417489c29c73df4895a9
+      internalID: 145860590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_15
+      rect:
+        serializedVersion: 2
+        x: 221
+        y: 67
+        width: 41
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937d31208e027f2449ba43c75d6f3fcd
+      internalID: -1834363316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_16
+      rect:
+        serializedVersion: 2
+        x: 277
+        y: 68
+        width: 23
+        height: 58
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 901f970e43be4e442a7c42b0835063c2
+      internalID: 958922907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_17
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1
+        width: 38
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbcc3b29c5a05cb4c8b8258c85c9202c
+      internalID: -1696822287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_18
+      rect:
+        serializedVersion: 2
+        x: 42
+        y: 1
+        width: 25
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d4c1de1fd9f2254f8c810fec7fba57c
+      internalID: -1062349460
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_19
+      rect:
+        serializedVersion: 2
+        x: 70
+        y: 1
+        width: 40
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c76bea6c32859a41904972a1c35bf7e
+      internalID: -1720641756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_20
+      rect:
+        serializedVersion: 2
+        x: 115
+        y: 1
+        width: 40
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1e6266b3b33ba9448f02ba2c1015801
+      internalID: 165426377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_21
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1
+        width: 24
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5417f793b3faab64a85f66b986c6916d
+      internalID: -90936464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_22
+      rect:
+        serializedVersion: 2
+        x: 184
+        y: 15
+        width: 31
+        height: 32
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fff62b2fd44dd24fa9509226c462532
+      internalID: 1937382441
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_23
+      rect:
+        serializedVersion: 2
+        x: 217
+        y: 1
+        width: 40
+        height: 60
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15b6ab3fb475e64458d89bb5634ee706
+      internalID: -133477335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 300px-Runic_letters_elder_futhark.svg_24
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 0
+        width: 40
+        height: 56
+      alignment: 3
+      pivot: {x: 1, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5042aea4f419654795b9ab84b818f5b
+      internalID: -197987507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: de55d39cf2f0e024bb47157ce6d65767
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      300px-Runic_letters_elder_futhark.svg_19: -1720641756
+      300px-Runic_letters_elder_futhark.svg_3: 1766772192
+      300px-Runic_letters_elder_futhark.svg_16: 958922907
+      300px-Runic_letters_elder_futhark.svg_12: 1375836483
+      300px-Runic_letters_elder_futhark.svg_13: -983655863
+      300px-Runic_letters_elder_futhark.svg_10: -1550902036
+      300px-Runic_letters_elder_futhark.svg_8: 735639344
+      300px-Runic_letters_elder_futhark.svg_7: -62396954
+      300px-Runic_letters_elder_futhark.svg_9: -404286248
+      300px-Runic_letters_elder_futhark.svg_6: 2032704306
+      300px-Runic_letters_elder_futhark.svg_2: 1673572746
+      300px-Runic_letters_elder_futhark.svg_17: -1696822287
+      300px-Runic_letters_elder_futhark.svg_4: -1908851071
+      300px-Runic_letters_elder_futhark.svg_11: -1092191412
+      300px-Runic_letters_elder_futhark.svg_15: -1834363316
+      300px-Runic_letters_elder_futhark.svg_5: -510703354
+      300px-Runic_letters_elder_futhark.svg_22: 1937382441
+      300px-Runic_letters_elder_futhark.svg_20: 165426377
+      300px-Runic_letters_elder_futhark.svg_0: 1178617027
+      300px-Runic_letters_elder_futhark.svg_14: 145860590
+      300px-Runic_letters_elder_futhark.svg_21: -90936464
+      300px-Runic_letters_elder_futhark.svg_23: -133477335
+      300px-Runic_letters_elder_futhark.svg_24: -197987507
+      300px-Runic_letters_elder_futhark.svg_18: -1062349460
+      300px-Runic_letters_elder_futhark.svg_1: 1679755006
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
