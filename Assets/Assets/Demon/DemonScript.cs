@@ -11,7 +11,7 @@ public class DemonScript : MonoBehaviour
     public NavMeshAgent agent;
     private Animator animator;
     private DemonLogic Logic;
-
+  //  private Vector3 minDistance = new Vector3(-0.5f, 0f,0f);
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
@@ -23,9 +23,9 @@ public class DemonScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
         agent.SetDestination(target.transform.position);
-        if (agent.speed == 0 && !Logic.attacking)
+        if (Vector3.Distance(transform.position, target.transform.position) <= 0.5 && !Logic.attacking)
         {
             // GetComponent<Animator>().Play("Idle");
             animator.SetBool("Walk", false);
@@ -36,7 +36,7 @@ public class DemonScript : MonoBehaviour
             Debug.Log("Idle");
 
         }
-        else if (agent.speed <= 2 && !Logic.attacking)
+        else if (Vector3.Distance(transform.position, target.transform.position) <= 2 && !Logic.attacking)
         {
             //GetComponent<Animator>().Play("Walk In Place");
             //animator.Play("Walk In Place");
@@ -44,7 +44,7 @@ public class DemonScript : MonoBehaviour
             animator.SetBool("Walk", true);
             Debug.Log("Walk");
         }
-        else if (agent.speed > 2 && !Logic.attacking)
+        else if (Vector3.Distance(transform.position, target.transform.position) >= 2 && !Logic.attacking)
         {
             //GetComponent<Animator>().Play("Run In Place");
             //animator.Play("Run In Place");

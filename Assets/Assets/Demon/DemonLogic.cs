@@ -37,28 +37,29 @@ public class DemonLogic : MonoBehaviour
                 Debug.Log("Attacking");
                 animator.SetBool("Walk", false);
                 animator.SetBool("Run", false);
-                animator.SetBool("Atack", attacking);
+                animator.SetBool("Attack", attacking);
 
                 //animator.GetCurrentAnimatorStateInfo(0).IsName("Eat");
                 /*if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"))
                 {
                     attackSpeedTimer = 0;
                 }*/
-                attackDuration += 1 * Time.deltaTime;
-                if (attackDuration >= 1.5f)
+                attackDuration += Time.deltaTime;
+
+                if (attackDuration >= 0.25f)
                 {
                     attackSpeedTimer = 0;
                     attackDuration = 0;
                 }
 
-
+            
                 Debug.Log(animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"));
             }
             else if (attackSpeedTimer < attackSpeed)
             {
                 attacking = false;
                 attackSpeedTimer += 1 * Time.deltaTime;
-                animator.SetBool("Atack", attacking);
+                animator.SetBool("Attack", attacking);
 
             }
 
@@ -67,9 +68,14 @@ public class DemonLogic : MonoBehaviour
         {
 
             attacking = false;
-            animator.SetBool("Atack", attacking);
+            animator.SetBool("Attack", attacking);
+        }
 
-
+        if (life <= 0)
+        {
+            animator.SetTrigger("Dead");
         }
     }
+
 }
+
