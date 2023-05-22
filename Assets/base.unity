@@ -623,6 +623,7 @@ MonoBehaviour:
   m_StopLineAtFirstRaycastHit: 1
 --- !u!120 &1755880445
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -716,10 +717,13 @@ LineRenderer:
     numCapVertices: 4
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &1755880446
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1166,6 +1170,7 @@ MonoBehaviour:
   m_StopLineAtFirstRaycastHit: 1
 --- !u!120 &1864502987
 LineRenderer:
+  serializedVersion: 2
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -1259,10 +1264,13 @@ LineRenderer:
     numCapVertices: 4
     alignment: 0
     textureMode: 0
+    textureScale: {x: 1, y: 1}
     shadowBias: 0.5
     generateLightingData: 0
+  m_MaskInteraction: 0
   m_UseWorldSpace: 1
   m_Loop: 0
+  m_ApplyActiveColorSpace: 0
 --- !u!114 &1864502988
 MonoBehaviour:
   m_ObjectHideFlags: 0
