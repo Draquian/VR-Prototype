@@ -44,7 +44,7 @@ public class DemonLogic : MonoBehaviour
                 {
                     attackSpeedTimer = 0;
                 }*/
-                attackDuration += Time.deltaTime;
+                attackDuration += 1*Time.deltaTime;
 
                 if (attackDuration >= 0.25f)
                 {
@@ -60,7 +60,6 @@ public class DemonLogic : MonoBehaviour
                 attacking = false;
                 attackSpeedTimer += 1 * Time.deltaTime;
                 animator.SetBool("Attack", attacking);
-
             }
 
         }
@@ -71,11 +70,29 @@ public class DemonLogic : MonoBehaviour
             animator.SetBool("Attack", attacking);
         }
 
-        if (life <= 0)
+     
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        Debug.Log("L'estic Tocant");
+        if (other.tag == "Player" && attacking == true)
         {
-            animator.SetTrigger("Dead");
+            other.gameObject.GetComponent<PlayerScript>().PlayerDamaged(damage);
+            Debug.Log("Estic fent danyo");
         }
     }
 
+    public void TakeDmg(int Income_dmg)
+    {
+        life = life - Income_dmg;
+
+        if (life <= 0)
+        {
+            animator.SetTrigger("Dead");
+
+            Destroy(gameObject.GetComponentInChildren<SkinnedMeshRenderer>());
+        }
+    }
 }
 
