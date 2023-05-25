@@ -22,7 +22,7 @@
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
     <OutputPath>Temp\Bin\Debug\</OutputPath>
-    <DefineConstants>UNITY_2021_3_4;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
+    <DefineConstants>UNITY_2021_3_4;UNITY_2021_3;UNITY_2021;UNITY_5_3_OR_NEWER;UNITY_5_4_OR_NEWER;UNITY_5_5_OR_NEWER;UNITY_5_6_OR_NEWER;UNITY_2017_1_OR_NEWER;UNITY_2017_2_OR_NEWER;UNITY_2017_3_OR_NEWER;UNITY_2017_4_OR_NEWER;UNITY_2018_1_OR_NEWER;UNITY_2018_2_OR_NEWER;UNITY_2018_3_OR_NEWER;UNITY_2018_4_OR_NEWER;UNITY_2019_1_OR_NEWER;UNITY_2019_2_OR_NEWER;UNITY_2019_3_OR_NEWER;UNITY_2019_4_OR_NEWER;UNITY_2020_1_OR_NEWER;UNITY_2020_2_OR_NEWER;UNITY_2020_3_OR_NEWER;UNITY_2021_1_OR_NEWER;UNITY_2021_2_OR_NEWER;UNITY_2021_3_OR_NEWER;PLATFORM_ARCH_64;UNITY_64;UNITY_INCLUDE_TESTS;USE_SEARCH_ENGINE_API;USE_SEARCH_TABLE;USE_SEARCH_MODULE;USE_PROPERTY_DATABASE;USE_SEARCH_EXTENSION_API;SCENE_TEMPLATE_MODULE;ENABLE_AR;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_EVENT_QUEUE;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_TEXTURE_STREAMING;ENABLE_VIRTUALTEXTURING;ENABLE_UNET;ENABLE_LZMA;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_UNITYWEBREQUEST;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_COLLAB;ENABLE_CLOUD_SERVICES_COLLAB_SOFTLOCKS;ENABLE_CLOUD_SERVICES_ADS;ENABLE_CLOUD_SERVICES_USE_WEBREQUEST;ENABLE_CLOUD_SERVICES_CRASH_REPORTING;ENABLE_CLOUD_SERVICES_PURCHASING;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_SERVICES_BUILD;ENABLE_CLOUD_LICENSE;ENABLE_EDITOR_HUB_LICENSE;ENABLE_WEBSOCKET_CLIENT;ENABLE_DIRECTOR_AUDIO;ENABLE_DIRECTOR_TEXTURE;ENABLE_MANAGED_JOBS;ENABLE_MANAGED_TRANSFORM_JOBS;ENABLE_MANAGED_ANIMATION_JOBS;ENABLE_MANAGED_AUDIO_JOBS;ENABLE_MANAGED_UNITYTLS;INCLUDE_DYNAMIC_GI;ENABLE_SCRIPTING_GC_WBARRIERS;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_VIDEO;ENABLE_ACCELERATOR_CLIENT_DEBUGGING;PLATFORM_STANDALONE;TEXTCORE_1_0_OR_NEWER;PLATFORM_STANDALONE_WIN;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_NVIDIA;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_OUT_OF_PROCESS_CRASH_HANDLER;ENABLE_CLUSTER_SYNC;ENABLE_CLUSTERINPUT;PLATFORM_UPDATES_TIME_OUTSIDE_OF_PLAYER_LOOP;GFXDEVICE_WAITFOREVENT_MESSAGEPUMP;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;NET_STANDARD_2_0;NET_STANDARD;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN;ENABLE_UNITY_COLLECTIONS_CHECKS;ENABLE_BURST_AOT;UNITY_TEAM_LICENSE;ENABLE_CUSTOM_RENDER_TEXTURE;ENABLE_DIRECTOR;ENABLE_LOCALIZATION;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_TILEMAP;ENABLE_TIMELINE;ENABLE_INPUT_SYSTEM;ENABLE_LEGACY_INPUT_MANAGER;CSHARP_7_OR_LATER;CSHARP_7_3_OR_NEWER</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <NoWarn>0169</NoWarn>
@@ -57,35 +57,36 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Samples\Universal RP\13.1.8\URP Package Samples\CameraStacking\3D Skybox\Scripts\SkyboxCamera.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\SetParticleRate.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\SetLightColor.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Controls\XRSlider.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Testing\Notes.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Conditions\OnPull.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\SpawnFromList.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Controls\XRJoystick.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\SetParticleRate.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\SetLightColor.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Controls\XRSlider.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Testing\Notes.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Conditions\OnPull.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\SpawnFromList.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Controls\XRJoystick.cs" />
     <Compile Include="Assets\Samples\Universal RP\13.1.8\URP Package Samples\SharedAssets\Scripts\FirstPersonController.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\RotateObject.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\MoveWithVelocity.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\VibrateController.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\TeleportPlayer.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Conditions\OnCollision.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\RotateObject.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\MoveWithVelocity.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\VibrateController.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\TeleportPlayer.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Conditions\OnCollision.cs" />
     <Compile Include="Assets\Samples\Universal RP\13.1.8\URP Package Samples\SharedAssets\Scripts\AutoLoadPipelineAsset.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Conditions\OnJoystickMove.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ManuallySelectObject.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Conditions\OnJoystickMove.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ManuallySelectObject.cs" />
     <Compile Include="Assets\Assets\Chicken\ChickenScript.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Conditions\OnSceneLoad.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ChangeMaterial.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ToggleInterface.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Testing\DisplayFPS.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\FadeCanvasOnOverlap.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ToggleVisibility.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\FadeCanvas.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Controls\XRLever.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\LookAtPlayer.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\RemoveObjectsWithTag.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\SetLightIntensity.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\SpawnObject.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Conditions\OnSceneLoad.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ChangeMaterial.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ToggleInterface.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Testing\DisplayFPS.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\FadeCanvasOnOverlap.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ToggleVisibility.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\FadeCanvas.cs" />
+    <Compile Include="Assets\Scripts\WandsAtack.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Controls\XRLever.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\LookAtPlayer.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\RemoveObjectsWithTag.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\SetLightIntensity.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\SpawnObject.cs" />
     <Compile Include="Assets\Samples\Universal RP\13.1.8\URP Package Samples\LensFlares\Scripts\ScreenSpacePlacement.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Actions\CreateTrail.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Conditions\OnTilt.cs" />
@@ -98,32 +99,33 @@
     <Compile Include="Assets\_Course Library\Scripts\Testing\TeleportAnchorWithFade.cs" />
     <Compile Include="Assets\_Course Library\Scripts\Testing\TeleportAreaWithFade.cs" />
     <Compile Include="Assets\Assets\Demon\DemonScript.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ScaleObject.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ApplyPhysics.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Controls\XRButton.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ScaleObject.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ApplyPhysics.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Controls\XRButton.cs" />
     <Compile Include="Assets\Samples\Universal RP\13.1.8\URP Package Samples\RendererFeatures\KeepFrame\KeepFrameFeature.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\PlaySoundsFromList.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\SetVolume.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\LoadScene.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Conditions\OnButtonPress.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ToggleLight.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ShowMessageFromList.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Conditions\OnTrigger.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\SetInteractionLayer.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\TranslateObject.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ToggleRay.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Controls\XRKnob.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\PlaySoundsFromList.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\SetVolume.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\LoadScene.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Conditions\OnButtonPress.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ToggleLight.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ShowMessageFromList.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Conditions\OnTrigger.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\SetInteractionLayer.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\TranslateObject.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ToggleRay.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Controls\XRKnob.cs" />
     <Compile Include="Assets\Assets\Demon\DemonLogic.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\PlayVideo.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\PlayQuickSound.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\ConvertValueToHue.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\StickToObject.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\PlayContinuousSound.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\MatchRotation.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\LaunchProjectile.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Conditions\OnVelocity.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\PlayVideo.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\PlayQuickSound.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\ConvertValueToHue.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\StickToObject.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\PlayContinuousSound.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\MatchRotation.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\LaunchProjectile.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Conditions\OnVelocity.cs" />
     <Compile Include="Assets\Assets\Chicken\ChickenLogic.cs" />
-    <Compile Include="Assets\_Course Library\Scripts\Actions\DestroyObject.cs" />
+    <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\DestroyObject.cs" />
+    <Compile Include="Assets\Scripts\PlayerBullet.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -142,9 +144,9 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Surface.cginc" />
     <None Include="Assets\Samples\Universal RP\13.1.8\URP Package Samples\SharedAssets\Shaders\3DText.shader" />
     <None Include="Assets\TextMesh Pro\Resources\LineBreaking Following Characters.txt" />
-    <None Include="Assets\_Course Library\Licenses.txt" />
+    <None Include="Assets\Assets Store\_Course Library\Licenses.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Masking.shader" />
-    <None Include="Assets\3D Items - Wand Pack\Read Me.txt" />
+    <None Include="Assets\Assets Store\3D Items - Wand Pack\Read Me.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF Overlay.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Mobile.shader" />
     <None Include="Assets\TextMesh Pro\Fonts\LiberationSans - OFL.txt" />
