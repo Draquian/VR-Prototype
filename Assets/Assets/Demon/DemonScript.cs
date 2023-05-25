@@ -33,7 +33,7 @@ public class DemonScript : MonoBehaviour
 
             //animator.SetBool("Idle", true);
 
-            Debug.Log("Idle");
+           // Debug.Log("Idle");
 
         }
         else if (Vector3.Distance(transform.position, target.transform.position) <= 2 && !Logic.attacking)
@@ -42,7 +42,7 @@ public class DemonScript : MonoBehaviour
             //animator.Play("Walk In Place");
             animator.SetBool("Run", false);
             animator.SetBool("Walk", true);
-            Debug.Log("Walk");
+           // Debug.Log("Walk");
         }
         else if (Vector3.Distance(transform.position, target.transform.position) >= 2 && !Logic.attacking)
         {
@@ -51,7 +51,7 @@ public class DemonScript : MonoBehaviour
             animator.SetBool("Walk", false);
             animator.SetBool("Run", true);
 
-            Debug.Log("Run");
+            //Debug.Log("Run");
 
         }
 
