@@ -13,6 +13,7 @@ public class ChickenLogic : MonoBehaviour
 
     private GameObject target;
     private Animator animator;
+    
 
     private float attackDuration = 0;
 
@@ -48,7 +49,7 @@ public class ChickenLogic : MonoBehaviour
             else if (attackSpeedTimer < attackSpeed)
             {
                 attacking = false;
-                attackSpeedTimer += 1 * Time.deltaTime;
+                attackSpeedTimer += 3 * Time.deltaTime;
                 animator.SetBool("Eat", attacking);
 
             }
@@ -74,11 +75,18 @@ public class ChickenLogic : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
 
+        if(other.tag == "playerProjectile")
+        {
+            //TakeDamage();
+        }
         Debug.Log("Detectando");
 
         if (other.tag == "Player" && attacking)
         {
             //Hace daño a player
+            //playerref.playerdamaged(damage);
+            other.gameObject.GetComponent<PlayerScript>().PlayerDamaged(damage);
+
             Debug.Log("Dañoooooooooooooooooooooooo");
         }
 
@@ -93,6 +101,9 @@ public class ChickenLogic : MonoBehaviour
 
         if (other.tag == "Player" && attacking)
         {
+            //playerRef.PlayerDamaged(damage);
+            other.gameObject.GetComponent<PlayerScript>().PlayerDamaged(damage);
+
             //Hace daño a player
             Debug.Log("Dañoooooooooooooooooooooooo2");
         }
@@ -108,7 +119,7 @@ public class ChickenLogic : MonoBehaviour
         animator.SetBool("Run", false);
         animator.SetBool("Eat", attacking);
 
-        attackDuration += 1 * Time.deltaTime;
+        attackDuration += 3 * Time.deltaTime;
         if (attackDuration >= 1.5f)
         {
             attackSpeedTimer = 0;

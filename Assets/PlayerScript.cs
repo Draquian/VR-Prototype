@@ -1,21 +1,26 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerScript : MonoBehaviour
 {
     public int _playerHp;
     float _timer = 0;
+    public float inmunityTime = 2;
+
+    Text _text;
     // Start is called before the first frame update
     void Start()
     {
+        _text = GameObject.FindGameObjectWithTag("VidaUI").GetComponent<Text>();
         _timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        _text.text = _playerHp.ToString();
     }
 
     public void PlayerDamaged(int damage)
@@ -23,7 +28,7 @@ public class PlayerScript : MonoBehaviour
         if (_timer <= 0)
         {
             _playerHp -= damage;
-            _timer = 3;
+            _timer = inmunityTime;
             //Debug.Log(_timer);
         }
         else if (_timer > 0)
