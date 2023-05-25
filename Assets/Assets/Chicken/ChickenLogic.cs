@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -15,45 +16,36 @@ public class ChickenLogic : MonoBehaviour
 
     private float attackDuration = 0;
 
-    public float life = 20;
+    public float hp = 20;
+
+    public ParticleSystem deadPartycle;
+    public bool kill = false;
+    private float tempDeadTimer = 0;
 
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
+        deadPartycle.Pause();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Vector3.Distance(transform.position, target.transform.position) <= 2)
+
+        if (kill)
+        {
+            TakeDamage(50);
+        }
+        if (Vector3.Distance(transform.position, target.transform.position) <= 2)
         {
 
             if (attackSpeedTimer >= attackSpeed)
             {
-                attacking = true;
-                Debug.Log("Attacking");
-                animator.SetBool("Walk", false);
-                animator.SetBool("Run", false);
-                animator.SetBool("Eat", attacking);
-
-                //animator.GetCurrentAnimatorStateInfo(0).IsName("Eat");
-                /*if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"))
-                {
-                    attackSpeedTimer = 0;
-                }*/
-                attackDuration += 1 * Time.deltaTime;
-                if (attackDuration >= 1.5f)
-                {
-                    attackSpeedTimer = 0;
-                    attackDuration = 0;
-                }
-
-
-                Debug.Log(animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"));
+                Attack();
             }
-            else if(attackSpeedTimer < attackSpeed)
+            else if (attackSpeedTimer < attackSpeed)
             {
                 attacking = false;
                 attackSpeedTimer += 1 * Time.deltaTime;
@@ -69,5 +61,76 @@ public class ChickenLogic : MonoBehaviour
             animator.SetBool("Eat", attacking);
 
         }
+        if (hp <= 0)
+        {
+            tempDeadTimer += 1 * Time.deltaTime;
+            if (tempDeadTimer >= 1)
+            {
+                Destroy(gameObject);
+            }
+
+        }
     }
+    private void OnTriggerEnter(Collider other)
+    {
+
+        Debug.Log("Detectando");
+
+        if (other.tag == "Player" && attacking)
+        {
+            //Hace daño a player
+            Debug.Log("Dañoooooooooooooooooooooooo");
+        }
+
+        if (other.tag == "InteractiveMapObject")
+        {
+            kill = true;
+        }
+    }
+    private void OnTriggerStay(Collider other)
+    {
+        Debug.Log("Detectando2");
+
+        if (other.tag == "Player" && attacking)
+        {
+            //Hace daño a player
+            Debug.Log("Dañoooooooooooooooooooooooo2");
+        }
+    }
+
+
+    public void Attack()
+    {
+
+        attacking = true;
+        Debug.Log("Attacking");
+        animator.SetBool("Walk", false);
+        animator.SetBool("Run", false);
+        animator.SetBool("Eat", attacking);
+
+        attackDuration += 1 * Time.deltaTime;
+        if (attackDuration >= 1.5f)
+        {
+            attackSpeedTimer = 0;
+            attackDuration = 0;
+        }
+
+
+        Debug.Log(animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"));
+    }
+    public void TakeDamage(int damageAmount)
+    {
+        hp -= damageAmount;
+        if (hp <= 0)
+        {
+            //Die
+            Destroy(gameObject.GetComponentInChildren<SkinnedMeshRenderer>());
+            deadPartycle.Play();
+        }
+        else
+        {
+
+        }
+    }
+
 }
