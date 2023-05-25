@@ -6,19 +6,25 @@ public class HPFeedback : MonoBehaviour
 {
     public Light myLight;
 
-    public ParticleSystem ps;
-    ParticleSystem.MainModule main;
-    public float _playerHP = 100;
+    //public ParticleSystem ps;
+    ParticleSystem main;
+    PlayerScript _playerHP;
+    //public float _playerHP;
+
+    public GameObject player;
+    public GameObject partilce;
+
     // Start is called before the first frame update
     void Start()
     {
-        main = ps.main;
+        _playerHP = player.GetComponent<PlayerScript>();
+        main = partilce.GetComponent<ParticleSystem>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        main.startLifetime = _playerHP / 500;
-        myLight.intensity = _playerHP;
+        main.startLifetime = _playerHP._playerHp / 500;
+        myLight.intensity = _playerHP._playerHp;
     }
 }
