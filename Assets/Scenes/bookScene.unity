@@ -138,7 +138,7 @@ GameObject:
   - component: {fileID: 224604171}
   m_Layer: 0
   m_Name: spell1 (4)
-  m_TagString: Untagged
+  m_TagString: WindSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -268,6 +268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _playerHp: 0
+  inmunityTime: 2
 --- !u!136 &348091572
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -588,8 +589,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 638531971}
   m_LocalRotation: {x: 0.00199731, y: -0.00019098172, z: -0.09861226, w: 0.995124}
-  m_LocalPosition: {x: -0.2142588, y: 0.06256596, z: -0.13579902}
-  m_LocalScale: {x: 0.019536, y: 0.01, z: 0.01}
+  m_LocalPosition: {x: -0.229, y: 0.066, z: -0.136}
+  m_LocalScale: {x: 0.016988607, y: 0.011904287, z: 0.019104}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1471155432}
@@ -629,7 +630,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 3e6aaaac8c4c43b46b54f0df90492c1a, type: 2}
+  - {fileID: 2100000, guid: 5794a76933a1f004f84481e6dcce5975, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -674,7 +675,7 @@ GameObject:
   - component: {fileID: 841137069}
   m_Layer: 0
   m_Name: spell1 (2)
-  m_TagString: Untagged
+  m_TagString: WaterSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -797,14 +798,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 854813045}
-  m_LocalRotation: {x: 0.001996291, y: -0.00020138032, z: -0.09342861, w: 0.99562395}
+  m_LocalRotation: {x: 0.005105595, y: 0.03294489, z: -0.093310356, w: 0.9950788}
   m_LocalPosition: {x: -0.22039188, y: 0.065008536, z: 0.12620366}
-  m_LocalScale: {x: 0.019393077, y: 0.0057020015, z: 0.0057020015}
+  m_LocalScale: {x: 0.019574774, y: 0.016099, z: 0.016099}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1471155432}
   m_RootOrder: 8
-  m_LocalEulerAnglesHint: {x: 0.226, y: -0.044, z: -10.722}
+  m_LocalEulerAnglesHint: {x: 0.934, y: 3.705, z: -10.684}
 --- !u!64 &854813047
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -839,7 +840,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: eaa06c514c063dc48abc25095a49828f, type: 2}
+  - {fileID: 2100000, guid: b4dd4e3d36dc9364cbd8a3b7e6fad9ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -976,7 +977,7 @@ GameObject:
   - component: {fileID: 1175062935}
   m_Layer: 0
   m_Name: spell1 (6)
-  m_TagString: Untagged
+  m_TagString: StoneSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6127,7 +6128,7 @@ GameObject:
   - component: {fileID: 2043267469}
   m_Layer: 0
   m_Name: spell1
-  m_TagString: Untagged
+  m_TagString: FireSpell
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
