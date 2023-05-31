@@ -20,8 +20,11 @@ public class ChickenLogic : MonoBehaviour
     public float hp = 20;
 
     public ParticleSystem deadPartycle;
+    public ParticleSystem deadPartycle2;
     public bool kill = false;
     private float tempDeadTimer = 0;
+    [SerializeField] int deadParticleDuration = 2;
+
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +32,7 @@ public class ChickenLogic : MonoBehaviour
         target = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
         deadPartycle.Pause();
+        deadPartycle2.Pause();
     }
 
     // Update is called once per frame
@@ -65,7 +69,7 @@ public class ChickenLogic : MonoBehaviour
         if (hp <= 0)
         {
             tempDeadTimer += 1 * Time.deltaTime;
-            if (tempDeadTimer >= 1)
+            if (tempDeadTimer >= deadParticleDuration)
             {
                 Destroy(gameObject);
             }
@@ -136,7 +140,9 @@ public class ChickenLogic : MonoBehaviour
         {
             //Die
             Destroy(gameObject.GetComponentInChildren<SkinnedMeshRenderer>());
+
             deadPartycle.Play();
+            deadPartycle2.Play();
         }
         else
         {

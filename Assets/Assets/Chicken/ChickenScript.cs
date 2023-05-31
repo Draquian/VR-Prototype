@@ -22,6 +22,10 @@ public class ChickenScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (Logic.hp <= 0)
+        {
+            agent.speed = 0;
+        }
         agent.SetDestination(target.transform.position);
         if (agent.speed == 0 && !Logic.attacking)
         {
