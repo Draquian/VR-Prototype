@@ -8,6 +8,9 @@ TagManager:
   - VidaUI
   - Trail
   - PlayerBullet
+  - Enemy
+  - EnemyProjectile
+  - playerProjectile
   layers:
   - Default
   - TransparentFX
