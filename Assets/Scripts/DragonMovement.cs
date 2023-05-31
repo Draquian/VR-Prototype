@@ -5,26 +5,33 @@ using UnityEngine.AI;
 
 public class DragonMovement : MonoBehaviour
 {
-
+    public AudioClip Fly;
+    public AudioClip Attack;
+    public AudioClip Hit;
+    public AudioClip Death;
     public GameObject player;
     public GameObject dragonProjectile;
     public GameObject dragonMouth;
     public NavMeshAgent agent;
+    AudioSource audiosource;
     public bool hasCreatedProjectile = false;
     Vector3 dist;
     public float dragonDistance;
-
+    float dragonHp = 150.0f;
     private Animator animator;
     private float speed = 3.0f;
     private float projectileSpeed = 0.3f;
     public bool isFloating = false;
-
+    float deathTimer = 0.0f;
+    float hitTimer = 0.0f;
     private float attackCooldown = 0.0f;
+    bool hit = false;
     // Start is called before the first frame update
     void Start()
     {
         dragonProjectile.SetActive(false);
         animator = GetComponent<Animator>();
+        audiosource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -50,14 +57,13 @@ public class DragonMovement : MonoBehaviour
 
             if (hasCreatedProjectile == false && attackCooldown > 5.0f)
             {
-
+                audiosource.PlayOneShot(Attack);
                 attackCooldown = 0.0f;
                 animator.SetBool("Attack", false);
                 hasCreatedProjectile = true;
                 //Debug.Log("Create Projectile");
                 dragonProjectile.SetActive(true);
                 dragonProjectile.transform.position = dragonMouth.transform.position;
-                Debug.Log("aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa");
 
                 dragonProjectile.transform.position = dragonMouth.transform.position;
                 dist = player.transform.position - dragonMouth.transform.position;
@@ -79,11 +85,46 @@ public class DragonMovement : MonoBehaviour
             
         }
 
+        if(dragonHp <= 0)
+        {
+
+            deathTimer += Time.deltaTime;
+            if(deathTimer > 1.25f)
+            {
+                Destroy(gameObject);
+            }
+        }
+
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.tag == "playerProjectile")
+        {
+            TakeDamage(50);
+            other.gameObject.SetActive(false);
+        }
+    }
+
+    private void TakeDamage(float damage)
+    {
+        dragonHp -= damage;
+
+        if (dragonHp > 0)
+        {
+            Debug.Log("Dragon Hit!!!");
+            audiosource.PlayOneShot(Hit);
+            
+        }
+        else
+        {
+            animator.SetBool("Dead", true);
+            audiosource.PlayOneShot(Death);
+
+        }
+    }
     void Seek(GameObject seeker, GameObject target, float speed)
     {
-       
         seeker.transform.Translate(dist * speed * Time.deltaTime);
     }
 }
