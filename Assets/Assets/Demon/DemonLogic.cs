@@ -18,11 +18,19 @@ public class DemonLogic : MonoBehaviour
 
     public float life = 20;
 
+    public ParticleSystem deadPartycle;
+    public ParticleSystem deadPartycle2;
+    public bool kill = false;
+    private float tempDeadTimer = 0;
+    [SerializeField] int deadParticleDuration = 2;
+
     // Start is called before the first frame update
     void Start()
     {
         target = GameObject.FindGameObjectWithTag("Player");
         animator = GetComponent<Animator>();
+        deadPartycle.Pause();
+        deadPartycle2.Pause();
     }
 
     // Update is called once per frame
@@ -39,21 +47,15 @@ public class DemonLogic : MonoBehaviour
                 animator.SetBool("Run", false);
                 animator.SetBool("Attack", attacking);
 
-                //animator.GetCurrentAnimatorStateInfo(0).IsName("Eat");
-                /*if (!animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"))
-                {
-                    attackSpeedTimer = 0;
-                }*/
-                attackDuration += 1*Time.deltaTime;
+                attackDuration += 2*Time.deltaTime;
 
-                if (attackDuration >= 0.25f)
+                if (attackDuration >= 2f)
                 {
                     attackSpeedTimer = 0;
                     attackDuration = 0;
                 }
 
             
-                Debug.Log(animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"));
             }
             else if (attackSpeedTimer < attackSpeed)
             {
@@ -70,7 +72,38 @@ public class DemonLogic : MonoBehaviour
             animator.SetBool("Attack", attacking);
         }
 
+        if (life<=0)
+        {
+            tempDeadTimer += 1 * Time.deltaTime;
+                if (tempDeadTimer >= deadParticleDuration)
+            {
+                Destroy(gameObject);
+            }
+        }
+
      
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.tag == "playerProjectile")
+        {
+            TakeDamage(50);
+        }
+
+
+        if (other.tag == "Player" && attacking)
+        {
+            //Hace daño a player
+            //playerref.playerdamaged(damage);
+            other.gameObject.GetComponent<PlayerScript>().PlayerDamaged(damage);
+
+        }
+
+        if (other.tag == "InteractiveMapObject")
+        {
+            kill = true;
+        }
     }
 
     private void OnTriggerStay(Collider other)
@@ -92,6 +125,18 @@ public class DemonLogic : MonoBehaviour
             animator.SetTrigger("Dead");
 
             Destroy(gameObject.GetComponentInChildren<SkinnedMeshRenderer>());
+        }
+    }
+
+    public void TakeDamage (int damageAmount)
+    {
+        life -= damageAmount;
+        if (life <= 0)
+        {
+            Destroy(gameObject.GetComponentInChildren<SkinnedMeshRenderer>());
+                deadPartycle.Play();
+                deadPartycle2.Play();
+            
         }
     }
 }
