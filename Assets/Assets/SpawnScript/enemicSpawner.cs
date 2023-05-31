@@ -8,10 +8,12 @@ public class enemicSpawner : MonoBehaviour
 
     public int counter;
     [SerializeField] float spawnTimerSpeed = 0;
+    
 
     [SerializeField] GameObject[] enemies;
     void Start()
     {
+        
         InvokeRepeating("SpawnEnemy", 0, spawnTimerSpeed);
     }
 
@@ -21,5 +23,7 @@ public class enemicSpawner : MonoBehaviour
         if (--counter == 0) CancelInvoke("SpawnEnemy");
         Instantiate(enemies[Random.Range(0, enemies.Length)],   
         new Vector3(Random.Range(gameObject.transform.position.x-5, gameObject.transform.position.x + 5), gameObject.transform.position.y, Random.Range(gameObject.transform.position.z - 5, gameObject.transform.position.z + 5)), Quaternion.identity);
+       
+        
     }
 }

@@ -144,6 +144,7 @@ public class ChickenLogic : MonoBehaviour
 
             deadPartycle.Play();
             deadPartycle2.Play();
+            
         }
         else
         {
