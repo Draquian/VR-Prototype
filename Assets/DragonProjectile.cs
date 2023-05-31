@@ -8,28 +8,20 @@ public class DragonProjectile : MonoBehaviour
     DragonMovement drag;
     public int damage = 10;
     public GameObject player;
-    public AudioClip Collision;
     // Start is called before the first frame update
     void Start()
     {
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
+     if(Vector3.Distance(gameObject.transform.position, player.transform.position) < 0.5f)
+        {
+            //playerScript.PlayerDamaged(damage);
+            gameObject.SetActive(false);
+        }   
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.tag == "Player")
-        {
-            playerScript.PlayerDamaged(damage);
-            gameObject.SetActive(false);
-        }
-        else if (other.tag == "playerProjectile")
-        {
-            gameObject.SetActive(false);
-        }
-    }
 }
