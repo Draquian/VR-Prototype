@@ -81,9 +81,10 @@ public class ChickenLogic : MonoBehaviour
 
         if(other.tag == "playerProjectile")
         {
-            //TakeDamage();
+            Debug.Log("HIT");
+            TakeDamage(50);
         }
-        Debug.Log("Detectando");
+       
 
         if (other.tag == "Player" && attacking)
         {
@@ -91,7 +92,7 @@ public class ChickenLogic : MonoBehaviour
             //playerref.playerdamaged(damage);
             other.gameObject.GetComponent<PlayerScript>().PlayerDamaged(damage);
 
-            Debug.Log("Dañoooooooooooooooooooooooo");
+            Debug.Log("AttackingPlayer");
         }
 
         if (other.tag == "InteractiveMapObject")
