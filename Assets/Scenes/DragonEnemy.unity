@@ -123,6 +123,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 23800000, guid: 4e43da8725fabc0479466ef97c08cd69, type: 2}
+--- !u!1 &235012938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 843550552209004039, guid: 4808cf114887f4a4fa26402d5c3c63c1, type: 3}
+  m_PrefabInstance: {fileID: 842953683745397880}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &378232530
 GameObject:
   m_ObjectHideFlags: 0
@@ -275,6 +280,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7276534517606399125, guid: 56e7e19ec50fc6f45b79a76ac13f7d2a, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1881724596}
+    - target: {fileID: 7276534517606399125, guid: 56e7e19ec50fc6f45b79a76ac13f7d2a, type: 3}
+      propertyPath: dragonProjectile
+      value: 
+      objectReference: {fileID: 235012938}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56e7e19ec50fc6f45b79a76ac13f7d2a, type: 3}
 --- !u!1 &984161530

@@ -10,7 +10,7 @@ public class Select_Spell : MonoBehaviour
     public GameObject _windWand;
     public GameObject _stoneWand;
 
-    GameObject _currrentSpell;
+    public GameObject _currrentSpell;
 
     // Start is called before the first frame update
     void Start()

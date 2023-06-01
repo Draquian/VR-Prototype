@@ -9,18 +9,18 @@ public class PlayerScript : MonoBehaviour
     float _timer = 0;
     public float inmunityTime = 2;
 
-    Text _text;
+   // Text _text;
     // Start is called before the first frame update
     void Start()
     {
-        _text = GameObject.FindGameObjectWithTag("VidaUI").GetComponent<Text>();
+      //  _text = GameObject.FindGameObjectWithTag("VidaUI").GetComponent<Text>();
         _timer = 0;
     }
 
     // Update is called once per frame
     void Update()
     {
-        _text.text = _playerHp.ToString();
+       // _text.text = _playerHp.ToString();
     }
 
     public void PlayerDamaged(int damage)

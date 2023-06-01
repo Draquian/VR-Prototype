@@ -99,10 +99,10 @@ public class DragonMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "playerProjectile")
+        if(other.tag == "playerProjectileTornado")
         {
-            TakeDamage(50);
-            other.gameObject.SetActive(false);
+            //TakeDamage(5);
+            //other.gameObject.SetActive(false);
         }
     }
 

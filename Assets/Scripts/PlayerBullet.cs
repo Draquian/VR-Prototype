@@ -4,23 +4,35 @@ using UnityEngine;
 
 public class PlayerBullet : MonoBehaviour
 {
+    float timer = 0.0f;
+    public GameObject _player;
+    public float KnockbackForce;
+    public GameObject _bomb;
     // Start is called before the first frame update
     void Start()
     {
-        
+        _bomb.SetActive(false);
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Vector3.Distance(gameObject.transform.position,_player.transform.position) > 50f)
+        {
+            Destroy(gameObject);
+        }
     }
 
     private void OnTriggerEnter(Collider collison)
     {
-        if (collison.tag == "Enemy")
+        if(gameObject.tag == "playerProjectileTornado" && collison.tag == "Enemy")
         {
-            Destroy(this);
+           collison.transform.position += _player.transform.forward * Time.deltaTime * KnockbackForce;
+        }
+        if (gameObject.tag == "playerProjectileFire" && (collison.tag == "Box" || collison.tag == "Enemy"))
+        {
+            Debug.Log("BOMBA");
+            _bomb.SetActive(true);
         }
     }
 }
