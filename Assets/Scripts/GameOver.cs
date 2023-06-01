@@ -7,6 +7,7 @@ using UnityEngine.SceneManagement;
 public class GameOver : MonoBehaviour
 {
     public Text pointsText;
+    public Text pointsText2;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +22,8 @@ public class GameOver : MonoBehaviour
     public void Setup(int score)
     {
         gameObject.SetActive(true);
-        pointsText.text = score.ToString() + "Points";
+        pointsText.text = score.ToString() + " Points";
+        pointsText2.text = score.ToString() + " Points";
     }
 
 
