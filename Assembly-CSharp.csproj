@@ -140,6 +140,7 @@
     <Compile Include="Assets\Assets Store\_Course Library\Scripts\Conditions\OnVelocity.cs" />
     <Compile Include="Assets\Assets\Chicken\ChickenLogic.cs" />
     <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\DestroyObject.cs" />
+    <Compile Include="Assets\Scripts\GameOver.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />

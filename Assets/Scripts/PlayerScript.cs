@@ -8,6 +8,8 @@ public class PlayerScript : MonoBehaviour
     public int _playerHp;
     float _timer = 0;
     public float inmunityTime = 2;
+    public int score;
+    public GameOver gameOver;
 
    // Text _text;
     // Start is called before the first frame update
@@ -21,6 +23,10 @@ public class PlayerScript : MonoBehaviour
     void Update()
     {
        // _text.text = _playerHp.ToString();
+       if(_playerHp <= 0)
+        {
+            gameOver.Setup(score);
+        }
     }
 
     public void PlayerDamaged(int damage)
