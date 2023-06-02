@@ -36,6 +36,11 @@ public class DemonLogic : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
+        if (kill)
+        {
+            TakeDamage(50);
+        }
         if (Vector3.Distance(transform.position, target.transform.position) <= 2)
         {
 
