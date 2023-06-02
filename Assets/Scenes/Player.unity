@@ -934,7 +934,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &789700933
 Rigidbody:
@@ -969,7 +969,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 352304b7fbe11f445970df6ae36e6227, type: 3}
       propertyPath: m_RootOrder
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 352304b7fbe11f445970df6ae36e6227, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1542,6 +1542,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _BulletTornado: {fileID: 5131324923915759741, guid: e6b6622365f444e46bc2ea198bdc27ed, type: 3}
   _BulletWater: {fileID: 944332145160202402, guid: 466dedea7809ff84b8b7808b1070e560, type: 3}
+  _BulletMeteore: {fileID: -1905476848720984682, guid: 3baba9a5fef63c14589db876c0b7f970, type: 3}
   _BulletFire: {fileID: 5247820807192655390, guid: 71af32b0abd0f30458797a57d7806a73, type: 3}
   _startPos: {fileID: 1942321033}
   _speed: 20
@@ -2465,7 +2466,7 @@ PrefabInstance:
       objectReference: {fileID: 371959610}
     - target: {fileID: 5843746969069647792, guid: 2e7c092dd8c697347b4ee810ccf8dcf5, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5843746969069647794, guid: 2e7c092dd8c697347b4ee810ccf8dcf5, type: 3}
       propertyPath: m_Sprite

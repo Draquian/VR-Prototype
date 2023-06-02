@@ -8,6 +8,7 @@ public class PlayerBullet : MonoBehaviour
     public GameObject _player;
     public float KnockbackForce;
     public GameObject _bomb;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,11 @@ public class PlayerBullet : MonoBehaviour
         {
             Debug.Log("BOMBA");
             _bomb.SetActive(true);
+        }
+        if (gameObject.tag == "playerProjectileRock" && (collison.tag == "Box" || collison.tag == "Enemy"))
+        {
+            collison.transform.position += _player.transform.forward * Time.deltaTime * KnockbackForce;
+            Debug.Log("Crash");
         }
     }
 }
