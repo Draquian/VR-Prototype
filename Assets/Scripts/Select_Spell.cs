@@ -4,18 +4,19 @@ using UnityEngine;
 
 public class Select_Spell : MonoBehaviour
 {
-    public GameObject _hand;
+    //public GameObject _hand;
     public GameObject _fireWand;
     public GameObject _waterWand;
     public GameObject _windWand;
     public GameObject _stoneWand;
 
-    public GameObject _currrentSpell;
+    GameObject _currrentSpell;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        Debug.Log("Start");
+        _currrentSpell = _fireWand;
     }
 
     // Update is called once per frame
@@ -28,23 +29,32 @@ public class Select_Spell : MonoBehaviour
     {
         if (collison.tag == "FireSpell")
         {
-            //_currrentSpell.SetActive(false);
+            Debug.Log("Fire");
+            _currrentSpell.SetActive(false);
             _currrentSpell = _fireWand;
+            _currrentSpell.SetActive(true);
+
         }
         else if (collison.tag == "WaterSpell")
         {
-            //_currrentSpell.SetActive(false);
+            Debug.Log("water");
+            _currrentSpell.SetActive(false);
             _currrentSpell = _waterWand;
+            _currrentSpell.SetActive(true);
         }
         else if (collison.tag == "WindSpell")
         {
-            //_currrentSpell.SetActive(false);
+            Debug.Log("Wind");
+            _currrentSpell.SetActive(false);
             _currrentSpell = _windWand;
+            _currrentSpell.SetActive(true);
         }
         else if (collison.tag == "StoneSpell")
         {
-            //_currrentSpell.SetActive(false);
+            Debug.Log("Stone");
+            _currrentSpell.SetActive(false);
             _currrentSpell = _stoneWand;
+            _currrentSpell.SetActive(true);
         }
     }
 }
