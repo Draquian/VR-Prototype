@@ -553,6 +553,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pointsText: {fileID: 0}
+  pointsText2: {fileID: 0}
 --- !u!114 &1766334262
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -676,7 +677,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1766334261}
         m_TargetAssemblyTypeName: GameOver, Assembly-CSharp
-        m_MethodName: Retry
+        m_MethodName: Play
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}

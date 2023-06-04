@@ -29,12 +29,17 @@ public class GameOver : MonoBehaviour
 
     public void Retry()
     {
-        SceneManager.LoadScene("Player");
-        Debug.Log("MOlt Loco");
+        SceneManager.LoadScene("Main");
+
     }
 
     public void MainMenu()
     {
         SceneManager.LoadScene("MainMenu");
+    }
+
+    public void Play()
+    {
+        SceneManager.LoadScene("Main");
     }
 }
