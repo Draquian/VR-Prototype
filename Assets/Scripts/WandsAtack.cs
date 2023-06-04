@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
+using UnityEngine.XR;
 public class WandsAtack : MonoBehaviour
 {
     public Rigidbody _BulletTornado;
@@ -20,15 +22,13 @@ public class WandsAtack : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
+        if (Input.GetButtonDown("space") && Select_Spell._stoneWand == Select_Spell._currrentSpell)
+          { 
             //Rigidbody createBullet = Instantiate(_BulletMeteore, _startPos.transform.position, transform.rotation) as Rigidbody;
             Rigidbody createBullet = Instantiate(_BulletMeteore, _startPos.transform.position, transform.rotation) as Rigidbody;
 
             createBullet.velocity = transform.TransformDirection(new Vector3(0, _speed, 0));
             //Physics.IgnoreCollision(createBullet.GetComponent<Collider>(), GetComponent<Collider>());
-
-            
         }
     }
 }
