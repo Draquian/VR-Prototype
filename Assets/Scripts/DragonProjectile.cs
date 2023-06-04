@@ -27,7 +27,7 @@ public class DragonProjectile : MonoBehaviour
             playerScript.PlayerDamaged(damage);
             gameObject.SetActive(false);
         }
-        else if (other.tag == "playerProjectile")
+        else if (other.tag == "playerProjectileTornado" || other.tag == "playerProjectileFire" || other.tag == "playerProjectileRock")
         {
             gameObject.SetActive(false);
         }

@@ -93,6 +93,7 @@
     <Compile Include="Assets\Scripts\WandsAtack.cs" />
     <Compile Include="Assets\Assets Store\_Course Library\Scripts\Controls\XRLever.cs" />
     <Compile Include="Assets\Scripts\PlayerBullet.cs" />
+    <Compile Include="Assets\Assets\WaveController\WaveController.cs" />
     <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\LookAtPlayer.cs" />
     <Compile Include="Assets\Assets Store\_Course Library\Scripts\Actions\RemoveObjectsWithTag.cs" />
     <Compile Include="Assets\UnityTechnologies\ParticlePack\Shared\Scripts\SimpleCameraController.cs" />

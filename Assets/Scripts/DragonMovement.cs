@@ -100,10 +100,36 @@ public class DragonMovement : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        if(other.tag == "playerProjectileTornado")
+        // Recieve damage
+        if (other.tag == "playerProjectileTornado")
         {
-            //TakeDamage(5);
-            //other.gameObject.SetActive(false);
+            Debug.Log("playerProjectileTornado HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+
+        }
+        else if (other.tag == "playerProjectileFire")
+        {
+            Debug.Log("playerProjectileFire HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+
+        }
+        else if (other.tag == "playerProjectileRock")
+        {
+            Debug.Log("playerProjectileFire HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+
+        }
+        else if (other.tag == "playerProjectileWater")
+        {
+            Debug.Log("playerProjectileWater HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+
+        }
+        else if (other.tag == "playerProjectileExplosion")
+        {
+            Debug.Log("playerProjectileExplosion HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+
         }
     }
 
