@@ -21,6 +21,7 @@ TagManager:
   - playerProjectileFire
   - playerProjectileExplosion
   - playerProjectileRock
+  - WaveController
   layers:
   - Default
   - TransparentFX

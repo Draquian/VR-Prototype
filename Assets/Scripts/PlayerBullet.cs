@@ -8,6 +8,7 @@ public class PlayerBullet : MonoBehaviour
     public GameObject _player;
     public float KnockbackForce;
     public GameObject _bomb;
+    public float damage = 0;
 
     // Start is called before the first frame update
     void Start()

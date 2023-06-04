@@ -78,14 +78,38 @@ public class ChickenLogic : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-
-        if(other.tag == "playerProjectile")
+        // Recieve damage
+        if(other.tag == "playerProjectileTornado")
         {
-            Debug.Log("HIT");
-            TakeDamage(50);
-        }
-       
+            Debug.Log("playerProjectileTornado HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
 
+        }
+        else if (other.tag == "playerProjectileFire")
+        {
+            Debug.Log("playerProjectileFire HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+
+        }
+        else if (other.tag == "playerProjectileRock")
+        {
+            Debug.Log("playerProjectileFire HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+
+        }
+        else if (other.tag == "playerProjectileWater")
+        {
+            Debug.Log("playerProjectileWater HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+
+        }
+        else if (other.tag == "playerProjectileExplosion")
+        {
+            Debug.Log("playerProjectileExplosion HIT");
+            TakeDamage(other.gameObject.GetComponent<PlayerBullet>().damage);
+            
+        }
+        //Attack to player
         if (other.tag == "Player" && attacking)
         {
             //Hace daño a player
@@ -134,7 +158,7 @@ public class ChickenLogic : MonoBehaviour
 
         Debug.Log(animator.GetCurrentAnimatorStateInfo(0).IsName("Eat"));
     }
-    public void TakeDamage(int damageAmount)
+    public void TakeDamage(float damageAmount)
     {
         hp -= damageAmount;
         if (hp <= 0)
