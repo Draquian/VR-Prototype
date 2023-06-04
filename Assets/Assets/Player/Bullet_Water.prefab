@@ -124,6 +124,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Bullet_Water
       objectReference: {fileID: 0}
+    - target: {fileID: 134854, guid: db2bbe470decdb34388b5f22e94766fa, type: 3}
+      propertyPath: m_TagString
+      value: playerProjectileWater
+      objectReference: {fileID: 0}
     - target: {fileID: 422684, guid: db2bbe470decdb34388b5f22e94766fa, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -235,3 +239,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 8487581137860110087, guid: 5460dafb3ad92384185f777f57c9ec9f, type: 3}
   KnockbackForce: 0
+  _bomb: {fileID: 0}
+  damage: 20

@@ -4819,3 +4819,4 @@ MonoBehaviour:
   _player: {fileID: 8487581137860110087, guid: 5460dafb3ad92384185f777f57c9ec9f, type: 3}
   KnockbackForce: 25
   _bomb: {fileID: 0}
+  damage: 100
