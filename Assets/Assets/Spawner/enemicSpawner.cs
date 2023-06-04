@@ -18,6 +18,7 @@ public class enemicSpawner : MonoBehaviour
         waveControllerRef = GameObject.FindGameObjectWithTag("WaveController");
         roundNumber = waveControllerRef.GetComponent<WaveController>().roundNumber;
         counter = waveControllerRef.GetComponent<WaveController>().enemiesNumber;
+        spawnTimerSpeed = waveControllerRef.GetComponent<WaveController>().spawnTimerController;
     }
 
     private void Update()
@@ -27,6 +28,7 @@ public class enemicSpawner : MonoBehaviour
             started = false;
             counter = waveControllerRef.GetComponent<WaveController>().enemiesNumber;
             roundNumber = waveControllerRef.GetComponent<WaveController>().roundNumber;
+            spawnTimerSpeed = waveControllerRef.GetComponent<WaveController>().spawnTimerController;
 
             InvokeRepeating("SpawnEnemy", 0, spawnTimerSpeed);
 

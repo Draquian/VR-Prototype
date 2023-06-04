@@ -9,6 +9,7 @@ public class WaveController : MonoBehaviour
     public bool roundStarted;
     public int enemiesNumber = 20;
     [SerializeField] float startRoundTimer=0;
+    public float spawnTimerController = 3;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,7 +29,8 @@ public class WaveController : MonoBehaviour
                 roundNumber++;
                 startRoundTimer = 0;
                 roundStarted = true;
-                enemiesNumber += 2 * roundNumber;
+                enemiesNumber +=  roundNumber;
+                spawnTimerController -= 0.1f;
             }
         }
 

@@ -108,9 +108,17 @@ PrefabInstance:
       propertyPath: dragonProjectile
       value: 
       objectReference: {fileID: 8586469331401196756}
+    - target: {fileID: 7276534517606399126, guid: 56e7e19ec50fc6f45b79a76ac13f7d2a, type: 3}
+      propertyPath: m_Acceleration
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7276534517606399144, guid: 56e7e19ec50fc6f45b79a76ac13f7d2a, type: 3}
       propertyPath: m_Center.y
       value: 6.22
+      objectReference: {fileID: 0}
+    - target: {fileID: 7276534517606399145, guid: 56e7e19ec50fc6f45b79a76ac13f7d2a, type: 3}
+      propertyPath: m_UseGravity
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 56e7e19ec50fc6f45b79a76ac13f7d2a, type: 3}
