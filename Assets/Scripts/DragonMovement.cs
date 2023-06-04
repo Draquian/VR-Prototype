@@ -9,7 +9,7 @@ public class DragonMovement : MonoBehaviour
     public AudioClip Attack;
     public AudioClip Hit;
     public AudioClip Death;
-    public GameObject player;
+    private GameObject player;
     public GameObject dragonProjectile;
     public GameObject dragonMouth;
     public NavMeshAgent agent;
@@ -29,6 +29,7 @@ public class DragonMovement : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         dragonProjectile.SetActive(false);
         animator = GetComponent<Animator>();
         audiosource = GetComponent<AudioSource>();
