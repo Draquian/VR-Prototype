@@ -110,6 +110,7 @@ MonoBehaviour:
   _waterWand: {fileID: 205888671960426131}
   _windWand: {fileID: 205888672003568995}
   _stoneWand: {fileID: 205888672703166558}
+  _currrentSpell: {fileID: 0}
 --- !u!1 &205888672631092619
 GameObject:
   m_ObjectHideFlags: 0
@@ -224,6 +225,7 @@ MonoBehaviour:
   _waterWand: {fileID: 205888671960426131}
   _windWand: {fileID: 205888672003568995}
   _stoneWand: {fileID: 205888672703166558}
+  _currrentSpell: {fileID: 0}
 --- !u!1 &205888672881925344
 GameObject:
   m_ObjectHideFlags: 0
@@ -334,6 +336,7 @@ MonoBehaviour:
   _waterWand: {fileID: 205888671960426131}
   _windWand: {fileID: 205888672003568995}
   _stoneWand: {fileID: 205888672703166558}
+  _currrentSpell: {fileID: 0}
 --- !u!1 &205888673983734624
 GameObject:
   m_ObjectHideFlags: 0
@@ -444,6 +447,7 @@ MonoBehaviour:
   _waterWand: {fileID: 205888671960426131}
   _windWand: {fileID: 205888672003568995}
   _stoneWand: {fileID: 205888672703166558}
+  _currrentSpell: {fileID: 0}
 --- !u!1 &205888674022094234
 GameObject:
   m_ObjectHideFlags: 0
@@ -561,6 +565,7 @@ MonoBehaviour:
   _BulletWater: {fileID: 944332145160202402, guid: 466dedea7809ff84b8b7808b1070e560, type: 3}
   _BulletMeteore: {fileID: -1905476848720984682, guid: 3baba9a5fef63c14589db876c0b7f970, type: 3}
   _BulletFire: {fileID: 5247820807192655390, guid: 71af32b0abd0f30458797a57d7806a73, type: 3}
+  Select_Spell: {fileID: 205888672342897371}
   _startPos: {fileID: 205888672881925344}
   _speed: 20
 --- !u!4 &205888671960727945 stripped
@@ -659,6 +664,7 @@ MonoBehaviour:
   _BulletWater: {fileID: 944332145160202402, guid: 466dedea7809ff84b8b7808b1070e560, type: 3}
   _BulletMeteore: {fileID: -1905476848720984682, guid: 3baba9a5fef63c14589db876c0b7f970, type: 3}
   _BulletFire: {fileID: 5247820807192655390, guid: 71af32b0abd0f30458797a57d7806a73, type: 3}
+  Select_Spell: {fileID: 205888674002315116}
   _startPos: {fileID: 205888673983734624}
   _speed: 20
 --- !u!1001 &205888672703039922
@@ -752,6 +758,7 @@ MonoBehaviour:
   _BulletWater: {fileID: 944332145160202402, guid: 466dedea7809ff84b8b7808b1070e560, type: 3}
   _BulletMeteore: {fileID: -1905476848720984682, guid: 3baba9a5fef63c14589db876c0b7f970, type: 3}
   _BulletFire: {fileID: 5247820807192655390, guid: 71af32b0abd0f30458797a57d7806a73, type: 3}
+  Select_Spell: {fileID: 205888672817144311}
   _startPos: {fileID: 205888672029533579}
   _speed: 20
 --- !u!1001 &205888673467931057
@@ -837,5 +844,6 @@ MonoBehaviour:
   _BulletWater: {fileID: 944332145160202402, guid: 466dedea7809ff84b8b7808b1070e560, type: 3}
   _BulletMeteore: {fileID: -1905476848720984682, guid: 3baba9a5fef63c14589db876c0b7f970, type: 3}
   _BulletFire: {fileID: 5247820807192655390, guid: 71af32b0abd0f30458797a57d7806a73, type: 3}
+  Select_Spell: {fileID: 205888673063122281}
   _startPos: {fileID: 205888674022094234}
   _speed: 20
